@@ -6,7 +6,7 @@ In this week, you will integrate the frontend and backend components of the Expe
 ## Requirements:
 
 ### User Authentication and Authorization:
-        Implement user authentication on the backend without using JWT.
+        Implement user authentication on the backend.
         Create API endpoints for user login and registration.
         Use sessions or cookies to manage user sessions securely.
 
