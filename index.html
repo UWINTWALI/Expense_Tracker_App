@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Expense Tracker</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <style>
+      .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: fadeIn 2s;
+        flex: 1; /* Allows the welcome section to grow and push the footer down */
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .cta {
+        text-decoration: none;
+        margin: 20px;
+        width: 100px;
+        padding: 15px 30px;
+        background-color: #007bff; /* Bright blue for call-to-action button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .cta :hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+      footer {
+        background-color: #0056b3; /* Dark blue footer */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+      }
+      footer a {
+        color: #4caf50; /* Green links in footer */
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="expense-header">
+      <h1>Welcome to Your Expense Tracker</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="welcome container">
+      <h2>Track Your Expenses with Ease</h2>
+      <p>
+        Our intuitive expense tracker helps you manage your finances
+        effortlessly. Start tracking your spending, set budgets, and achieve
+        your financial goals!
+      </p>
+      <a href="register.html" class="cta">Get Started </a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

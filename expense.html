@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Expenses</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <header class="expense-header">
+      <h1>Expense Tracker</h1>
+
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="expense.html">Manage Expenses</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+            <section id="add-category" class="expense-section">
+          <h2>Add Category</h2>
+          <form id="category-form" class="expense-form">
+              <input
+              type="text"
+              id="new-category"
+              name="category_name"
+              placeholder="New category(Optional)"
+              required
+            />
+            <p id="help-msg">(eg: Travelling, Education, etc..)</p>
+            <button type="submit" class="button">Add Category</button>
+          </form>
+        </section>
+
+        <section class="expense-section">
+          <h2>Add Expense</h2>
+          <form id="expense-form" class="expense-form">
+            <div>
+              <label for="category-select">Category:</label>
+              <select id="category-select" required></select>
+            </div>
+            <input type="number" id="amount" placeholder="Amount" required />
+            <input type="date" id="date" required />
+            <textarea id="description" placeholder="Description"></textarea>
+            <button type="submit" class="button">Add Expense</button>
+            <p id="para-msg"></p>
+        </form>
+    </section>
+</div>
+
+      <script src="resources/js/expense.js"></script>
+    </div>
+  </body>
+</html>

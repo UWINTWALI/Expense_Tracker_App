@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Dashboard</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="expense-header">
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="expense.html">Manage Expenses</a></li>
+                <li><a href="expense.html" id="logoutButton">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="summary-cards">
+            <div class="card" id="total-expense">                
+                    <h2>Total Expense</h2>
+                    <p>$<span id="total-expense-amount">0.00</span></p>
+            </div>
+            <div class="category-cards" id="category-cards"></div>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="spending-chart"></canvas>
+        </div>
+        
+        <div class="expense-list">
+            <h2>All Expenses</h2>
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+            </select>
+            <div class="expense-items" id="expense-items"></div>
+        </div>
+    </div>
+    
+    <script src="resources/js/user_dashboard.js"></script>
+</body>
+</html>
