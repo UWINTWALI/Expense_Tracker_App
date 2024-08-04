@@ -151,6 +151,7 @@ select{
     text-decoration: none;
 }
 #total-expense{
+    width: 100%;
     background-color: var(--color-brown-light);
     color: var(--color-dark-blue);
     border:1px solid var(--color-brown-light);
@@ -159,7 +160,7 @@ select{
 
 .summary-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 20px 0;
 }
 
