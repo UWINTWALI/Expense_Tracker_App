@@ -8,6 +8,7 @@
      --color-dark-blue:#2e3c50;
      --color-dark-blue-2:#2c3e50;
      --color-white:#ffffff;
+     --color-dark-white: #E1E1D1;
 
  }
 
@@ -42,10 +43,10 @@ header h1 {
 }
 
 form {
-    background-color: var(--color-white);
+    background-color: var(--color-brown-lighter);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
 }
 label{
     display: none;
@@ -62,6 +63,12 @@ textarea,
     width: 80%;
     padding: 10px;
     margin:0;
+}
+input,
+textarea{
+    background-color: var(--color-dark-white);
+    border: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
 .button {
@@ -91,6 +98,10 @@ textarea,
 
 .help-msg-visible {
     opacity: 1 !important;
+}
+select{
+    width: 200px;
+    height: 30px;
 }
 /* ______________________ADD EXPENSE_______________________ */
 .expense-section{
