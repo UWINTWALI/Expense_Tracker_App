@@ -11,5 +11,6 @@ Welcome to the Expense Tracker Web App! This application is designed to help you
 Feel free to explore and start managing your expenses more effectively!
 
 
+<!-- ![Banner](https://github.com/UWINTWALI/Expense_Tracker_App/blob/main/project_images/Dashboard.png) -->
+<img src="https://github.com/UWINTWALI/Expense_Tracker_App/blob/main/project_images/Dashboard.png" alt="Banner" width="600" height="600">
 
-![Banner](https://github.com/UWINTWALI/Expense_Tracker_App/blob/main/project_images/Dashboard.png)
